@@ -77,9 +77,17 @@ Para obtener los endpoints con sus ejemplos de body y header es necesario import
 ## IMÁGENES
 <!-- DIAGRAMA-->
 ## Diagrama
+![Diagrama](https://github.com/user-attachments/assets/38a9efce-c19b-437a-9aed-ec6ed4d98c35)
+
 
 <!-- RESULTADOS POSTMAN-->
 ## Resultados Postman
+![registeredEmails](https://github.com/user-attachments/assets/c011bb6d-5a15-4524-9855-92fbe0197f67)
+
+![login](https://github.com/user-attachments/assets/4f985330-6547-42b6-83cd-748f854c54de)
+
+![createUser](https://github.com/user-attachments/assets/43243eae-fb5b-4dda-b765-84eb78256545)
+
 
 
 </p>
