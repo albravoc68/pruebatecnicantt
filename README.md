@@ -88,6 +88,8 @@ Para obtener los endpoints con sus ejemplos de body y header es necesario import
 
 ![createUser](https://github.com/user-attachments/assets/43243eae-fb5b-4dda-b765-84eb78256545)
 
+![image](https://github.com/user-attachments/assets/ace1a697-6739-4cdf-b6a6-fb3325a39622)
+
 
 
 </p>
