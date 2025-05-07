@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "4a5465e7-72bd-4dba-b7a8-7eebc6dfe319",
+		"name": "PruebaTecnicaNTT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32754611"
+	},
+	"item": [
+		{
+			"name": "createUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Juan Rodriguez\",\r\n    \"email\": \"juan42@rodriguez.org\",\r\n    \"password\": \"hunter\",\r\n    \"phones\": [\r\n        {\r\n            \"number\": \"1234567\",\r\n            \"citycode\": \"1\",\r\n            \"contrycode\": \"57\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pruebaTecnica/users/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pruebaTecnica",
+						"users",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "loginUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"juan@rodriguez.org\",\r\n    \"password\": \"hunter\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/pruebaTecnica/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pruebaTecnica",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registeredEmails (Require Authorization)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJuZW9yaXNKV1QiLCJzdWIiOiJqdWFuNEByb2RyaWd1ZXoub3JnIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTcwNjk5ODk1NywiZXhwIjoxNzA3ODYyOTU3fQ.5a_bVM7QIdsruLGA2DkLfVb9obNKdvGlIScfjC4ewIg5JeIbi02QTWRSAlTNsLPDthBHFXz-tDm205J7v5AQIg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/pruebaTecnica/users/registeredEmails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pruebaTecnica",
+						"users",
+						"registeredEmails"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
